@@ -4,11 +4,13 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import { DARK_THEME, LIGHT_THEME, TOGGLE_THEMES, navs } from '../utils/constants';
 import { Link } from "react-router-dom";
-import { ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
+import { useTheme } from 'next-themes';
 
 function Header() {
-  const [theme, setTheme] = useState(LIGHT_THEME);
+  const { theme, setTheme } = useTheme();
   const [navCollapse, setNavCollapse] = useState(true);
+  const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const updateScroll = () => {
       window.scrollY >= 90 ? setScroll(true) : setScroll(false);
@@ -36,7 +38,7 @@ function Header() {
                     </ScrollLink>
                   </li>
                 })}
-                <span onClick={() => setTheme(TOGGLE_THEMES[theme])} className='hover:bg-gray-100 
+                <span onClick={() => setTheme(theme === DARK_THEME ? LIGHT_THEME: DARK_THEME)} className='hover:bg-gray-100 
                   hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                     { theme === DARK_THEME ? <FiSun />: <FiMoon /> }
                 </span>
@@ -45,7 +47,7 @@ function Header() {
           <nav className='p-4 flex sm:hidden items-center justify-between'>
             <FaSpeakap size={28} />
             <div className='flex items-center gap-4'>
-              <span onClick={() => setTheme(TOGGLE_THEMES[theme])} className='bg-gray-100 dark:bg-violet-700
+              <span onClick={() => setTheme(theme === DARK_THEME ? LIGHT_THEME: DARK_THEME)} className='bg-gray-100 dark:bg-violet-700
                 p-1.5 rounded-full cursor-pointer transaction-colors'>
                   { theme === DARK_THEME ? <FiSun /> : <FiMoon /> }
               </span>
