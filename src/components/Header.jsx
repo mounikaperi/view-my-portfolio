@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaSpeakap } from "react-icons/fa";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { CgMenuRight, CgClose } from "react-icons/cg";
-import { DARK_THEME, LIGHT_THEME, TOGGLE_THEMES, navs } from '../utils/constants';
+import { DARK_THEME, LIGHT_THEME, navs } from '../utils/constants';
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -23,7 +23,7 @@ function Header() {
         border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
           <nav className='lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex 
             items-center justify-between'>
-              <Link href={'/'} className='exl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 
+              <Link to={'/'} className='exl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 
                 transition-colors duration-300'>
                 <FaSpeakap size={28} />
               </Link>
