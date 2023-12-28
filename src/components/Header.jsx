@@ -29,7 +29,7 @@ function Header() {
                 <FaSpeakap size={28} />
               </Link>
               <ul className='flex items-center gap-8'>
-                { navs.map((currentNav, uniqueKey) => {
+                { navs.map((currentNav, uniqueKey) => (
                   <li key={uniqueKey}>
                     <ScrollLink className='hover:text-violet-700 hover:dark:text-violet-500 tansition-colors
                       capitalize cursor-pointer' to={currentNav} offset={-60} smooth={true} duration={500}
@@ -37,7 +37,7 @@ function Header() {
                         {currentNav}
                     </ScrollLink>
                   </li>
-                })}
+                ))}
                 <span onClick={() => setTheme(theme === DARK_THEME ? LIGHT_THEME: DARK_THEME)} className='hover:bg-gray-100 
                   hover:dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>
                     { theme === DARK_THEME ? <FiSun />: <FiMoon /> }

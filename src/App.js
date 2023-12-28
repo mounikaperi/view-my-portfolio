@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import { Switch, Route } from 'react-router-dom';
 import { HomePage } from './components/HomePage';
 
