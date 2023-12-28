@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaSpeakap } from "react-icons/fa";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { CgMenuRight, CgClose } from "react-icons/cg";
-import { DARK_THEME, LIGHT_THEME, navs } from '../utils/constants';
+import { DARK_THEME, LIGHT_THEME, NAVS } from '../utils/constants';
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -28,7 +28,7 @@ function Header() {
                 <FaSpeakap size={28} />
               </Link>
               <ul className='flex items-center gap-8'>
-                { navs.map((currentNav, uniqueKey) => (
+                { NAVS.map((currentNav, uniqueKey) => (
                   <li key={uniqueKey}>
                     <ScrollLink className='hover:text-violet-700 hover:dark:text-violet-500 tansition-colors
                       capitalize cursor-pointer' to={currentNav} offset={-60} smooth={true} duration={500}
@@ -59,7 +59,7 @@ function Header() {
               <div className='flex flex-col p-4 gap-5 bg-gray-100/95 backdrop-filter backdrop-blur-sm
                 dark:bg-grey-900/95 w-3/4'>
                   <CgClose className='self-end my-2' size={20} onClick={() => setNavCollapse(true)} />
-                  { navs.slice(0, 4).map((currentNav) => (
+                  { NAVS.slice(0, 4).map((currentNav) => (
                     <ScrollLink key={currentNav} className='hover:text-purple-600 py-1.5 px-4 rounded
                       transaction-colors capitalize cursor-pointer' to={currentNav} offset={-60}
                       smooth={true} duration={500} isDynamic={true} onClick={() => setNavCollapse(true)}>
