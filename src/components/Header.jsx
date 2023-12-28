@@ -5,12 +5,11 @@ import { CgMenuRight, CgClose } from "react-icons/cg";
 import { DARK_THEME, LIGHT_THEME, TOGGLE_THEMES, navs } from '../utils/constants';
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
-import { useTheme } from 'next-themes';
 
 function Header() {
-  const { theme, setTheme } = useTheme();
   const [navCollapse, setNavCollapse] = useState(true);
   const [scroll, setScroll] = useState(false);
+  const [theme, setTheme] = useState(LIGHT_THEME);
   useEffect(() => {
     const updateScroll = () => {
       window.scrollY >= 90 ? setScroll(true) : setScroll(false);
