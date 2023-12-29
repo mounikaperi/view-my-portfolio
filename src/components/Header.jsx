@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import NameInitialLogo from '../images/NameInitialLogo.jpg'
 import { FiMoon, FiSun } from "react-icons/fi";
 import { CgMenuRight, CgClose } from "react-icons/cg";
-import { DARK_THEME, LIGHT_THEME, NAVS } from "../utils/constants";
+import { LIGHT_THEME, NAVS } from "../utils/constants";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 

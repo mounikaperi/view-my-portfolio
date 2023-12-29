@@ -10,7 +10,7 @@ import techStackImage3 from '../images/icons8-react-80.png';
 import techStackImage4 from '../images/icons8-spring-boot-48.png';
 import TypewriterComponent from 'typewriter-effect';
 import { IoIosArrowForward } from "react-icons/io";
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
 
 function Hero() {
   const [theme] = useState(LIGHT_THEME);
