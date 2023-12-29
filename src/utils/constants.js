@@ -9,3 +9,4 @@ exports.TITLE = 'Full Stack Developer';
 exports.ABOUT = 'I am a full stack developer passionate in building systems that scale. I am currently working at Cognizant as a Full Stack Developer having 5+ years of experience in FullStack and MernStack. I am passionate building and scaling web applications and learning system design and computer core fundamentals. I hold AWS certifications. I keep publishing articles and blogs on HashNode. Reading and Implementing bunch of research papers and Reading few of engineering books every now and then.';
 exports.RESUME_URL = 'resumeurl';
 exports.CALL_URL='callurl';
+exports.TECH_STACK_CATEGORIES = ['Full-Stack', 'Mern-Stack', 'Others'];

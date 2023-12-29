@@ -10,7 +10,7 @@ function Socials() {
       lg:flex flex-col gap-3 z-20">
       {socials.map((currentSocial) => {
         return (
-          <Link href={currentSocial.link} target="_blank" rel="noreferrer" key={currentSocial.icon} 
+          <Link to={currentSocial.link} target="_blank" rel="noreferrer" key={currentSocial.icon} 
             className="grid place-items-center p-3 hover:animate-bounce rounded-full bg-violet-700 text-white">
             {
               React.createElement(Fa[`${currentSocial.icon}`])

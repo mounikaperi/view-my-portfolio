@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "fast-average-color": "^9.4.0",
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

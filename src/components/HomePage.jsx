@@ -1,6 +1,7 @@
 import About from "./About";
 import Header from "./Header";
 import Hero from "./Hero";
+import Skills from "./Skills";
 import Socials from "./Socials";
 
 export const HomePage = () => {
@@ -10,6 +11,7 @@ export const HomePage = () => {
       <Hero />
       <Socials />
       <About />
+      <Skills />
     </>
   );
 }

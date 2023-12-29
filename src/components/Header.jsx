@@ -22,7 +22,7 @@ function Header() {
       border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
         <nav className='lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center 
           justify-between'>
-            <Link href={'/'} className='px-20 2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 
+            <Link to={'/'} className='px-20 2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 
               transition-colors duration-300'>
                 <img src={NameInitialLogo} />
             </Link>
