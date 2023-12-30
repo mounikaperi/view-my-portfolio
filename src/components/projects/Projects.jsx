@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SectionWrapper from '../SectionWrapper'
-import { TECH_STACK_CATEGORIES } from '../../utils/constants'
+import { TECH_STACKS } from '../../utils/constants'
 import ProjectCard from './ProjectCard';
 import { getProjectDetails } from '../../utils/commonUtils';
 import ViewAllButton from './ViewAllButton';
@@ -26,7 +26,7 @@ function Projects() {
     <SectionWrapper id="projects" className="mx-4 md:mx-0 min-h-screen">
       <h2 className="text-4xl text-center">Projects</h2>
         <div className="overflow-x-auto scroll-hide md:w-full max-w-screen-sm mx-auto mt-6 flex justify-between items-center gap-2 md:gap-3 bg-white dark:bg-grey-800 p-2 rounded-md">
-          {TECH_STACK_CATEGORIES.map((currentCategory, uniqueKey) => (
+          {TECH_STACKS.map((currentCategory, uniqueKey) => (
             <span key={uniqueKey} onClick={() => filterProjectsBasedOnCategory(currentCategory)} 
               className={`p-1.5 md:p-2 w-full text-sm md:text-base text-center capitalize rounded-md 
               ${category.toLowerCase() === currentCategory.toLowerCase() ? "bg-violet-600 text-white" 

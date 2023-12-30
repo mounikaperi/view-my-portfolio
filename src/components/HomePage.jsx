@@ -1,4 +1,5 @@
 import About from "./About";
+import Experience from "./experiences/Experience";
 import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./projects/Projects";
@@ -14,6 +15,7 @@ export const HomePage = () => {
       <About />
       <Skills />
       <Projects />
+      <Experience />
     </>
   );
 }

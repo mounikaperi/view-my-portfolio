@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SectionWrapper from '../SectionWrapper'
+import ExperienceCard from './ExperienceCard'
 import { KNOWLEDGE_SECTION } from '../../utils/constants'
 import { getCertificationDetails, getEducationDetails, getExperienceDetails } from '../../utils/commonUtils';
 import ViewAllButton from '../projects/ViewAllButton';

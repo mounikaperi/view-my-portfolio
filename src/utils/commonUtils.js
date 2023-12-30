@@ -17,6 +17,8 @@ const javaScriptIcon = require('../images/skills/JS.webp');
 const springMvcIcon = require('../images/skills/springMVC.jpg');
 const springSecurityIcon = require('../images/skills/springsecurity.jpg');
 const junitIcon = require('../images/skills/Junit.jpg');
+const gitIcon = require('../images/skills/Git.webp');
+const gitHubIcon = require('../images/skills/GitHub.webp');
 
 exports.getSocialDetails = () => {
   return [
@@ -44,96 +46,106 @@ exports.getSkills = () => {
     {
       "name": "Java",
       "image": javaIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "Spring Boot",
       "image": springBootIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "Spring Data JPA",
       "image": springDataJPAIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "Spring-MVC",
       "image": springMvcIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "Spring-Security",
       "image": springSecurityIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "Hibernate",
       "image": hibernateIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "Junit",
       "image": junitIcon,
-      "category": "Full-Stack"
+      "category": "Others"
     },
     {
       "name": "MySQL",
       "image": mySqlIcon,
-      "category": "Full-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "ReactJS",
       "image": reactJsIcon,
-      "category": "Mern-Stack"
+      "category": "FrontEnd"
     },
     {
       "name": "NodeJS",
       "image": NodeJsIcon,
-      "category": "Mern-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "ExpressJS",
       "image": expressJsIcon,
-      "category": "Mern-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "MongoDB",
       "image": mongoDBIcon,
-      "category": "Mern-Stack"
+      "category": "BackEnd"
     },
     {
       "name": "AWS",
       "image": awsIcon,
-      "category": "Mern-Stack"
+      "category": "Others"
     },
     {
       "name": "HTML5",
       "image": html5Icon,
-      "category": "Others"
+      "category": "FrontEnd"
     },
     {
       "name": "CSS3",
       "image": css3Icon,
-      "category": "Others"
+      "category": "FrontEnd"
     },
     {
       "name": "SASS",
       "image": sassIcon,
-      "category": "Others"
+      "category": "FrontEnd"
     },
     {
       "name": "JavaScript",
       "image": javaScriptIcon,
-      "category": "Others"
+      "category": "FrontEnd"
     },
     {
       "name": "Material-UI",
       "image": materialUIIcon,
-      "category": "Others"
+      "category": "FrontEnd"
     },
     {
       "name": "Bootstrap",
       "image": bootstrapIcon,
+      "category": "FrontEnd"
+    },
+    {
+      "name": "Git",
+      "image": gitIcon,
+      "category": "Others"
+    },
+    {
+      "name": "GitHub",
+      "image": gitHubIcon,
       "category": "Others"
     }
   ];
@@ -144,7 +156,7 @@ exports.getProjectDetails = () => {
     {
       "name": "Project Title",
       "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "Full-Stack",
+      "category": "FrontEnd",
       "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
       "links": {
         "code": "https://github.com/mounikaperi",
@@ -156,13 +168,63 @@ exports.getProjectDetails = () => {
 }
 
 exports.getExperienceDetails = () => {
-  return [];
+  return  [
+    {
+      "company": "ABC Tech Solutions",
+      "position": "Web Developer",
+      "duration": "2020 -2022",
+      "desc": [
+        "Assisted with design and development of project.",
+        "Worked on building the product from scratch and built multiple dashboards.",
+        "Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+      ]
+    },
+    {
+      "company": "XYZ Tech Solutions",
+      "position": "Web Developer",
+      "duration": "2022 - present",
+      "desc": [
+        "Assisted with design and development of project.",
+        "Worked on building the product from scratch and built multiple dashboards.",
+        "Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+      ]
+    }
+  ]
 }
 
 exports.getEducationDetails = () => {
-  return [];
+  return [
+    {
+      "institute": "XYZ School | CBSE",
+      "degree": "HSC Science",
+      "duration": "2014 - 2016"
+    },
+    {
+      "institute": "XYZ College Of Engineering",
+      "degree": "B.Tech CSE",
+      "duration": "2016 - 2020",
+      "desc": [
+        "Pursuing IT Engineering course from ABC University",
+        "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
+        "Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
+      ]
+    }
+  ];
 }
 
 exports.getCertificationDetails = () => {
-  return [];
+  return [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuedBy": "Amazon Web Services Training and Certification",
+      "credentialLink": "https://www.credly.com/badges/12d2b469-e020-4f70-b2b1-62c5c7d09476/linked_in_profile",
+      "skills": "Amazon Web Services, AWS, Cloud Services"
+    },
+    {
+      "name": "AWS Certified Developer – Associate",
+      "issuedBy": "Amazon Web Services Training and Certification",
+      "credentialLink": "https://www.credly.com/badges/db320ae8-cbf0-4047-a6cc-4bf142c905c2/linked_in_profile",
+      "skills": "Amazon Web Services, Cloud Development, Cloud Deployment"
+    }
+  ]
 }
