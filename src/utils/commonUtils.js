@@ -208,6 +208,16 @@ exports.getEducationDetails = () => {
         "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
         "Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
       ]
+    },
+    {
+      "institute": "AAA",
+      "degree": "B.Tech CSE",
+      "duration": "2016 - 2020",
+      "desc": [
+        "Pursuing IT Engineering course from ABC University",
+        "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
+        "Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
+      ]
     }
   ];
 }
@@ -218,13 +228,15 @@ exports.getCertificationDetails = () => {
       "name": "AWS Certified Cloud Practitioner",
       "issuedBy": "Amazon Web Services Training and Certification",
       "credentialLink": "https://www.credly.com/badges/12d2b469-e020-4f70-b2b1-62c5c7d09476/linked_in_profile",
-      "skills": "Amazon Web Services, AWS, Cloud Services"
+      "skills": "Amazon Web Services, AWS, Cloud Services",
+      "duration": '2023-2026'
     },
     {
       "name": "AWS Certified Developer – Associate",
       "issuedBy": "Amazon Web Services Training and Certification",
       "credentialLink": "https://www.credly.com/badges/db320ae8-cbf0-4047-a6cc-4bf142c905c2/linked_in_profile",
-      "skills": "Amazon Web Services, Cloud Development, Cloud Deployment"
+      "skills": "Amazon Web Services, Cloud Development, Cloud Deployment",
+      "duration": '2023-2026'
     }
   ]
 }

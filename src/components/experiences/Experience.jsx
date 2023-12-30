@@ -42,11 +42,10 @@ function Experience() {
             }
         </div>
       </div>
-      {currentDetails.length > 2 && (
-          <ViewAllButton scrollTo="experience" title={viewAll ? "Okay, I got it" : "View All"}
-            handleClick={() => setViewAll(!viewAll)}
-          />
-      )}
+      { (currentDetails.length > 2) &&
+        <ViewAllButton handleClick={() => setViewAll(!viewAll)} title={viewAll ? 'Okay, I got it' : 'View All'} 
+          scrollTo='currentDetails'/>
+      }
     </SectionWrapper>
   );
 }

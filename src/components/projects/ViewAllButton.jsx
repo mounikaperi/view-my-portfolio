@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import PropTypes from "prop-types";
 
 function ViewAllButton({ handleClick, title, scrollTo}) {
   ViewAllButton.propTypes = {
     handleClick: PropTypes.func.isRequired,
-    title: PropTypes.String.isRequired,
+    title: PropTypes.string.isRequired,
     scrollTo: PropTypes.string.isRequired
   }
   return (
