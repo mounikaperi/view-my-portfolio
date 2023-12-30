@@ -156,7 +156,7 @@ exports.getProjectDetails = () => {
     {
       "name": "Project Title",
       "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "FrontEnd",
+      "category": "Full-Stack",
       "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
       "links": {
         "code": "https://github.com/mounikaperi",
@@ -170,7 +170,7 @@ exports.getProjectDetails = () => {
 exports.getExperienceDetails = () => {
   return  [
     {
-      "company": "ABC Tech Solutions",
+      "company": "BBB",
       "position": "Web Developer",
       "duration": "2020 -2022",
       "desc": [
@@ -180,7 +180,7 @@ exports.getExperienceDetails = () => {
       ]
     },
     {
-      "company": "XYZ Tech Solutions",
+      "company": "CCC",
       "position": "Web Developer",
       "duration": "2022 - present",
       "desc": [
@@ -195,12 +195,12 @@ exports.getExperienceDetails = () => {
 exports.getEducationDetails = () => {
   return [
     {
-      "institute": "XYZ School | CBSE",
-      "degree": "HSC Science",
+      "institute": "XXX",
+      "degree": "YYY",
       "duration": "2014 - 2016"
     },
     {
-      "institute": "XYZ College Of Engineering",
+      "institute": "AAA",
       "degree": "B.Tech CSE",
       "duration": "2016 - 2020",
       "desc": [
@@ -228,3 +228,16 @@ exports.getCertificationDetails = () => {
     }
   ]
 }
+
+exports.getAllEdDetails = (show) => {
+  switch (show) {
+    case 'Experiences':
+      return this.getExperienceDetails().reverse();
+    case 'Education':
+      return this.getEducationDetails().reverse();
+    case 'Certifications':
+      return this.getCertificationDetails().reverse();
+    default:
+      return [];
+  }
+};

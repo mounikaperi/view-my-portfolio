@@ -17,13 +17,6 @@ const cardVariants = {
 
 function ProjectCard(props) {
   const { name, techstack, category, image, links } = props;
-  ProjectCard.PropTypes = {
-    name: PropTypes.string,
-    techstack: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    links: PropTypes.object.isRequired
-  }
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
