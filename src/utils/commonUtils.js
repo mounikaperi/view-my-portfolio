@@ -138,3 +138,19 @@ exports.getSkills = () => {
     }
   ];
 }
+
+exports.getProjectDetails = () => {
+  return [
+    {
+      "name": "Project Title",
+      "techstack": "HTML5, CSS3, JavaScript, jQuery",
+      "category": "MERN Stack",
+      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+      "links": {
+        "code": "",
+        "video": "",
+        "visit": ""
+      }
+    }
+  ];
+}

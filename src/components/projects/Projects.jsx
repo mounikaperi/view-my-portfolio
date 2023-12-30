@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import SectionWrapper from '../SectionWrapper'
 import { TECH_STACK_CATEGORIES } from '../../utils/constants'
+import ProjectCard from './ProjectCard';
+import { getProjectDetails } from '../../utils/commonUtils';
 
-function Projects(props) {
-  const { projectsData } = props;
+function Projects() {
+  const projectsData = getProjectDetails();
   const [projects, setProjects] = useState([...projectsData].reverse());
   const categories = [...Array.from(new Set(projects.map((currentProject) => currentProject.category)))];
   const [category, setCategory] = useState(categories[0]);

@@ -4,7 +4,7 @@ import { TECH_STACK_CATEGORIES } from '../../utils/constants';
 import { getSkills } from "../../utils/commonUtils";
 import SkillCard from './SkillCard';
 
-function Skills(props) {
+function Skills() {
   const skills = getSkills();
   console.log(skills);
   const [category, setCategory] = useState(TECH_STACK_CATEGORIES[0]);
