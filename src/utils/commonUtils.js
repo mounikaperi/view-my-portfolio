@@ -154,3 +154,15 @@ exports.getProjectDetails = () => {
     }
   ];
 }
+
+exports.getExperienceDetails = () => {
+  return [];
+}
+
+exports.getEducationDetails = () => {
+  return [];
+}
+
+exports.getCertificationDetails = () => {
+  return [];
+}
