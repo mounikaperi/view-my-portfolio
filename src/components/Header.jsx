@@ -24,7 +24,7 @@ function Header() {
           justify-between'>
             <Link to={'/'} className='px-20 2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 
               transition-colors duration-300'>
-                <img src={NameInitialLogo} />
+                <img src={NameInitialLogo} width={75} height={75} />
             </Link>
             <ul className='flex items-center gap-8'>
                 { NAVS.map((currentNav, uniqueKey) => (
@@ -43,7 +43,7 @@ function Header() {
             </ul>
         </nav>
         <nav className='p-4 flex sm:hidden items-center justify-between'>
-          <img src={NameInitialLogo} width={200} height={200} />
+          <img src={NameInitialLogo} width={75} height={75} />
           <div className='flex items-center gap-4'>
             <span onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className='bg-gray-100 
               dark:bg-violet-700 p-1.5 rounded-full cursor-pointer transition-colors'>

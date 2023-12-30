@@ -1,5 +1,5 @@
 import { FastAverageColor } from 'fast-average-color';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 function SkillCard(props) {
   const { currentFilteredSkill } = props;

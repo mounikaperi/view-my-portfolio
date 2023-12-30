@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import SectionWrapper from './SectionWrapper';
-import { TECH_STACK_CATEGORIES } from '../utils/constants';
-import { getSkills } from "../utils/commonUtils";
+import SectionWrapper from '../SectionWrapper';
+import { TECH_STACK_CATEGORIES } from '../../utils/constants';
+import { getSkills } from "../../utils/commonUtils";
 import SkillCard from './SkillCard';
 
 function Skills(props) {

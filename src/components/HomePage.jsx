@@ -1,7 +1,7 @@
 import About from "./About";
 import Header from "./Header";
 import Hero from "./Hero";
-import Skills from "./Skills";
+import Skills from "./skills/Skills";
 import Socials from "./Socials";
 
 export const HomePage = () => {
