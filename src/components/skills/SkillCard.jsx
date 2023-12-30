@@ -1,9 +1,16 @@
 import { FastAverageColor } from 'fast-average-color';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 function SkillCard(props) {
   const { currentFilteredSkill } = props;
   const { name, image } = currentFilteredSkill;
+  const [bgColor, setBgColor] = useState("");
+  SkillCard.propTypes = {
+    currentFilteredSkill: PropTypes.object,
+    name: PropTypes.string,
+    image: PropTypes.string
+  }
   useEffect(() => {
     new FastAverageColor().getColorAsync(image)
       .then((color) => {

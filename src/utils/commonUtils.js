@@ -144,12 +144,12 @@ exports.getProjectDetails = () => {
     {
       "name": "Project Title",
       "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "MERN Stack",
+      "category": "Full-Stack",
       "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
       "links": {
-        "code": "",
-        "video": "",
-        "visit": ""
+        "code": "https://github.com/mounikaperi",
+        "video": "https://github.com/mounikaperi",
+        "visit": "https://github.com/mounikaperi"
       }
     }
   ];

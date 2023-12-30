@@ -6,7 +6,6 @@ import SkillCard from './SkillCard';
 
 function Skills() {
   const skills = getSkills();
-  console.log(skills);
   const [category, setCategory] = useState(TECH_STACK_CATEGORIES[0]);
   return (
     <SectionWrapper id='skills' className='min-h-screen mt-12 md:mt-0 mx-4 md:mx-0 xl:my-20 2xl:my-0'>
