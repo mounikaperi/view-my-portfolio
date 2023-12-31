@@ -1,40 +1,45 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import SectionWrapper from './SectionWrapper';
 import contactMe from '../images/contactMe.jpg';
 import { BiLoaderAlt } from 'react-icons/bi';
 import { ToastContainer, toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
 
-  const [values, setValues] = useState({name: '', email: '', message: ''});
+  const form = useRef();
+  const [values, setValues] = useState({
+    to_name: 'Sai Mounika Peri',
+    from_name: '', 
+    user_email: '', 
+    message: ''
+  });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async(event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    if (!values.name.trim() || !values.email.trim() || !values.message.trim()) {
+    if (!values.from_name.trim() || !values.user_email.trim() || !values.message.trim()) {
       toast.warning('Empty Fields!!!');
       return false;
     }
     setLoading(true);
-    axios.post('/api/mail', {
-      name: values.name,
-      email: values.email,
-      message: values.message
-    }).then((response) => {
-      if (response.status === 200) {
-        setValues({name: '', email: '', message: ''});
-        setLoading(false);
-        setSuccess(true);
-        toast.success(response.data.message);
-      } else {
-        setLoading(false);
-        toast.error(response.data.message);
-      }
-    }).catch((error) => {
+    emailjs.sendForm(
+      'service_p0i7ptp', 
+      'template_ymuqsk5', 
+      form.current, 
+      'u4sI4WrGEjW0oBjvb'
+    ).then((result) => {
+      setValues({from_name: '', user_email: '', message: ''});
       setLoading(false);
-      toast.error(error.message);
-    })
+      setSuccess(true);
+      toast.success('Your message has been sent successfully');
+    }, (error) => {
+      setLoading(false);
+      setValues({from_name: '', user_email: '', message: ''});
+      toast.error(`There was an error sending your message. ${error}`);
+    });
   };
 
   const handleChange = (event) => {
@@ -55,11 +60,12 @@ function ContactUs() {
           <h3 className='text-2xl'>Get in touch</h3>
           <p className='text-gray-400 mb-4 text-sm md:text-base'>My inbox is always open. Whether you have 
             a question or just want to say hello, I will try my best to get back to you!</p>
-          <form onSubmit={handleSubmit} className='flex flex-col gap-4 rounded-xl'>
-            <input onChange={handleChange} required value={values.name} name='name' type='text'
+          <form onSubmit={handleSubmit} ref={form} className='flex flex-col gap-4 rounded-xl'>
+            <input value={values.to_name} name='to_name' type='text' className='hidden' />
+            <input onChange={handleChange} required value={values.from_name} name='from_name' type='text'
               placeholder='Full Name *' className='outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400
               rounded-lg py-3 px-4' />
-            <input onChange={handleChange} required value={values.email} name='email' type='email'
+            <input onChange={handleChange} required value={values.user_email} name='user_email' type='email'
               placeholder='Email *' className='outline-none bg-gray-100 dark:bg-grey-800 placeholder-gray-400
               rounded-lg py-3 px-4' />
             <textarea onChange={handleChange} required value={values.message} name='message' rows={4}
