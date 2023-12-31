@@ -170,23 +170,25 @@ exports.getProjectDetails = () => {
 exports.getExperienceDetails = () => {
   return  [
     {
-      "company": "BBB",
-      "position": "Web Developer",
-      "duration": "2020 -2022",
+      "company": "NTT DATA Global Delivery Services",
+      "position": "Full-Stack Developer | Project Lead",
+      "duration": "2018 -2022",
       "desc": [
-        "Assisted with design and development of project.",
-        "Worked on building the product from scratch and built multiple dashboards.",
-        "Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+        "Led a team of 15 for 3 Major queues of Blue Cross Blue Shield. Built Enterprise Web Services using NodeJs, Spring Microservices with frontend React, GraphQL",
+        "I have led major incidents- initiated the bridge calls, gathered all the middleware teams under one roof and got the SLA Critical Issues addressed quickly either through a workaround or a problem ticket for permanent fix",
+        "Proactively analyzed the code issues, suspecting a future incident/defect that might come to limelight and communicated actively to the stakeholders.",
+        "Actively participated in Change Management, Release Management for my application code implementations/deployments. Effectively communicated in the CAB meetings on the immediate outages or the vendor support required for business validations. Engaged multiple groups for the Validations and got them deployed within timeframe and experienced the customer satisfaction.",
+        "Skills: Java · React · Spring · NodeJs · GraphQL ·  MySQL · REST APIs"
       ]
     },
     {
-      "company": "CCC",
-      "position": "Web Developer",
+      "company": "Cognizant",
+      "position": "Full-Stack Developer",
       "duration": "2022 - present",
       "desc": [
-        "Assisted with design and development of project.",
+        "Building full stack application, delivering content to OTT Platforms",
         "Worked on building the product from scratch and built multiple dashboards.",
-        "Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+        "Skills: ReactJS · GraphQL · Java · MongoDB · TypeScript · Spring · NodeJS · MongoDB · AWS Lambdas"
       ]
     }
   ]

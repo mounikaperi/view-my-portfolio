@@ -2,7 +2,6 @@ import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import { MdSchool, MdWork, MdWorkspacePremium } from 'react-icons/md';
-import { Link } from 'react-scroll';
 
 function ExperienceCard({ 
   company, institute, name, credentialLink, duration, position, degree, issuedBy, skills, desc, index 
@@ -34,14 +33,12 @@ function ExperienceCard({
         <h3 className="mb-2 font-medium text-lg md:text-xl">{company || institute || name}</h3>
         <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{position || degree || issuedBy} | {duration}</p>
         { credentialLink && 
-          ( 
-            <>
-            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mt-2 mb-2">CredentialLink: 
-              <span><a href={`${credentialLink}`} target='_blank' className="text-sm text-violet-700 dark:text-violet-700 
-                hover:text-violet-700 hover:dark:text-violet-500 cursor-pointer
+          (
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mt-2 mb-2">CredentialLink:<span>
+                <a href={`${credentialLink}`} target='_blank' className="text-sm text-violet-700 
+                dark:text-violet-700 hover:text-violet-700 hover:dark:text-violet-500 cursor-pointer
                 transition-colors duration-300"> {credentialLink}</a></span>
             </p>
-            </>
             )
         }
         { skills && (<p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Skills: {skills}</p>) }
