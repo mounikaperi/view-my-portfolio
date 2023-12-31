@@ -40,7 +40,7 @@ function ContactUs() {
   const handleChange = (event) => {
     setValues((previousInput) => ({
       ...previousInput,
-      [e.target.name]: e.target.value
+      [event.target.name]: event.target.value
     }));
   };
 

@@ -36,7 +36,7 @@ exports.getSocialDetails = () => {
     },
     {
       "icon": "FaTwitter",
-      "link": "https://twitter.com/jhondoe"
+      "link": "https://twitter.com/SaiMounikaPeri"
     }
   ]
 }
@@ -197,29 +197,9 @@ exports.getExperienceDetails = () => {
 exports.getEducationDetails = () => {
   return [
     {
-      "institute": "XXX",
-      "degree": "YYY",
-      "duration": "2014 - 2016"
-    },
-    {
-      "institute": "AAA",
-      "degree": "B.Tech CSE",
-      "duration": "2016 - 2020",
-      "desc": [
-        "Pursuing IT Engineering course from ABC University",
-        "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
-        "Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
-      ]
-    },
-    {
-      "institute": "AAA",
-      "degree": "B.Tech CSE",
-      "duration": "2016 - 2020",
-      "desc": [
-        "Pursuing IT Engineering course from ABC University",
-        "Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
-        "Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
-      ]
+      "institute": "Guru Nanak Institutions Technical Campus",
+      "degree": "Bachelor of Technology - BTech, Computer Science",
+      "duration": "2014 - 2018"
     }
   ];
 }
