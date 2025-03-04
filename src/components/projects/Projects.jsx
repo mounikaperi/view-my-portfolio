@@ -13,7 +13,7 @@ function Projects() {
   const [viewAll, setViewAll] = useState(false);
 
   const filterProjectsBasedOnCategory = (category) => {
-    setViewAll(false);
+    setViewAll(true);
     setCategory(category);
     setFilteredProjects(projects.filter((currentProject) => currentProject.category.toLowerCase() === category.toLowerCase()));
   }

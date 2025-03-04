@@ -30,11 +30,11 @@ function About() {
                     bg-violet-600 dark:bg-violet-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl
                     transition-shadow cursor-pointer'>Resume</ScrollLink>
                   }
-                  {
+                  {/* {
                     CALL_URL.trim() && <ScrollLink to={CALL_URL} target="_blank" className='text-violet-600
                       flex items-center gap-1 hover:bg-violet-50 hover:dark:bg-violet-900/10 py-2 px-4
                       transition-colors rounded-md cursor-pointer'>Book a 1:1 call <BiLinkExternal /> </ScrollLink>
-                  }
+                  } */}
                 </div>
               </div>
             </div>

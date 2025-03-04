@@ -79,11 +79,6 @@ exports.getSkills = () => {
       "category": "Others"
     },
     {
-      "name": "MySQL",
-      "image": mySqlIcon,
-      "category": "BackEnd"
-    },
-    {
       "name": "ReactJS",
       "image": reactJsIcon,
       "category": "FrontEnd"
@@ -154,14 +149,36 @@ exports.getSkills = () => {
 exports.getProjectDetails = () => {
   return [
     {
-      "name": "Project Title",
-      "techstack": "HTML5, CSS3, JavaScript, jQuery",
-      "category": "Full-Stack",
-      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+      "name": "Nexter - Your Home Your Freedom",
+      "techstack": "HTML5, CSS3, Sass",
+      "category": "Basic Web",
+      "image": '../images/Nexter.png',
       "links": {
-        "code": "https://github.com/mounikaperi",
-        "video": "https://github.com/mounikaperi",
-        "visit": "https://github.com/mounikaperi"
+        "code": "https://github.com/mounikaperi/css-project-assignments/tree/main/Project-Nexter",
+        "video": "https://www.youtube.com/watch?v=Bxu0Ccl_oIs",
+        "visit": "https://saimounikas-nexter-app.netlify.app/"
+      }
+    },
+    {
+      "name": "Trillio - All In One Booking App",
+      "techstack": "HTML5, CSS3, Sass, JavaScript",
+      "category": "Basic Web",
+      "image": '../images/trillio.png',
+      "links": {
+        "code": "https://github.com/mounikaperi/css-project-assignments/tree/main/Project-Trillio",
+        "video": "https://www.youtube.com/watch?v=jDiDhcc6S-M",
+        "visit": "https://saimounikas-trillio-bookingapp.netlify.app/"
+      }
+    },
+    {
+      "name": "OmniFood - The Food Website",
+      "techstack": "HTML5, CSS3, Sass, JavaScript",
+      "category": "Basic Web",
+      "image": '../images/omnifood.png',
+      "links": {
+        "code": "https://github.com/mounikaperi/css-project-assignments/tree/main/Project-OmniFood",
+        "video": "https://www.youtube.com/watch?v=kSLj3TD4J3o",
+        "visit": "https://saimounikas-foodstartup-omnifood.netlify.app/"
       }
     }
   ];
@@ -178,7 +195,7 @@ exports.getExperienceDetails = () => {
         "I have led major incidents- initiated the bridge calls, gathered all the middleware teams under one roof and got the SLA Critical Issues addressed quickly either through a workaround or a problem ticket for permanent fix",
         "Proactively analyzed the code issues, suspecting a future incident/defect that might come to limelight and communicated actively to the stakeholders.",
         "Actively participated in Change Management, Release Management for my application code implementations/deployments. Effectively communicated in the CAB meetings on the immediate outages or the vendor support required for business validations. Engaged multiple groups for the Validations and got them deployed within timeframe and experienced the customer satisfaction.",
-        "Skills: Java · React · Spring · NodeJs · GraphQL ·  MySQL · REST APIs"
+        "Skills: ReactJS · Java · MicroServices · Spring · NodeJS · MongoDB"
       ]
     },
     {
@@ -186,9 +203,12 @@ exports.getExperienceDetails = () => {
       "position": "Full-Stack Developer",
       "duration": "2022 - present",
       "desc": [
-        "Building full stack application, delivering content to OTT Platforms",
-        "Worked on building the product from scratch and built multiple dashboards.",
-        "Skills: ReactJS · GraphQL · Java · MongoDB · TypeScript · Spring · NodeJS · MongoDB · AWS Lambdas"
+        "I have experience working as a Full Stack and MERN Stack Developer, contributing to the development of scalable applications",
+        "Have expertise in building event-driven architectures, seamlessly integrating multiple microservices using AWS API Gateway and Lambda functions",
+        "Played a key role in optimizing backend processes, cleaning/refactoring bad code which led to improvement of the system's performance by 75% ensuring high availability of services",
+        "Have experience in making the components lightweight by ensuring loose coupling between the microservices",
+        "Proficient in designing and deploying cloud-based solutions, leveraging AWS services to enhance system efficiency and scalability.",
+        "Skills: ReactJS · Java · MicroServices · Spring · NodeJS · MongoDB · AWS Lambdas"
       ]
     }
   ]
@@ -199,7 +219,12 @@ exports.getEducationDetails = () => {
     {
       "institute": "Guru Nanak Institutions Technical Campus",
       "degree": "Bachelor of Technology - BTech, Computer Science",
-      "duration": "2014 - 2018"
+      "duration": "2014 - 2018",
+      "desc": [
+        "Pursued Computer Science Engineering course from Guru Nanak Institutions",
+        "Worked on building the product from scratch and built multiple dashboards.",
+        "Skills: ReactJS · Java · MongoDB · Microservices · Spring · NodeJS · MongoDB · AWS Lambdas"
+      ]
     }
   ];
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { BiLinkExternal } from "react-icons/bi";
@@ -16,6 +15,7 @@ const cardVariants = {
 };
 
 function ProjectCard(props) {
+  console.log(props);
   const { name, techstack, category, image, links } = props;
   const [ref, inView] = useInView({
     threshold: 0.2,
@@ -53,7 +53,7 @@ function ProjectCard(props) {
 
       <div className="my-2 flex flex-col gap-3">
         <h3 className="text-xl font-medium">{name}</h3>
-        <p className="text-sm text-gray-400">{category}
+        <p className="text-sm text-gray-400">
           <span className="font-medium">Tech Stack:</span> {techstack}
         </p>
       </div>

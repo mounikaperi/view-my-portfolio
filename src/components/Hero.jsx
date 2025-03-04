@@ -18,9 +18,9 @@ function Hero() {
       mx-auto overflow-hidden`}>
         <div className="absolute -z-10 min-h-screen h-full w-full">
           <img src={imageUrl} style={{ objectFit: 'cover', layout: 'fill', quality: 100 }} loading='lazy' className='object-bottom' alt={''} />
-        </div>
-        <div className="px-4 py-16 lg:py-36 flex flex-col-reverse lg:flex-row justify-around gap-4 lg:gap-0">
-          <div className="lg:px-20 flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/3 mx-8 md:mx-6 xl:mx-0">
+        </div>  
+        <div className="py-16 lg:py-48 flex flex-col-reverse lg:flex-row justify-around gap-10 lg:gap-0a2">
+          <div className="flex flex-col gap-4 md:gap-6 text-left lg:w-1/2 2xl:w-1/3 mx-4 md:mx-6 xl:mx-0">
             <div className="flex items-center gap-1">
               <img unoptimized="true" alt='waving-hand' width={30} height={30} src={wavingHand} />
               <p className="text-lg md:text-xl mt-2 md:mt-1.5">Hey</p>
@@ -42,9 +42,9 @@ function Hero() {
             </ScrollLink>
           </div>
           <div className="relative mx-auto lg:mx-0 mt-12 md:mt-16 lg:mt-0">
-            <div className="w-56 h-56 md:w-80 md:h-80 lg:-translate-x-16">
+            <div className="w-.569c h-56 md:w-80 md:h-80 lg:-translate-x-16">
               <img alt='avatar' width={1000} height={1000} className="rounded-full w-full h-full object-cover" src={profileImageUrl} />
-            </div>
+            </div>  
             <div className="absolute grid -top-6 -left-12 lg:-top-14 lg:-left-32 w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-grey-800 rounded-full place-items-center hover:shadow-lg transition-shadow">
               <img alt='tech-stack' className="h-8 w-8 md:h-10 md:w-10 object-cover" src={techStackImage1} width={100} height={100} />
             </div>
