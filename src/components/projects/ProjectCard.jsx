@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaGithub, FaVideo } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
@@ -22,30 +21,37 @@ function ProjectCard(props) {
     triggerOnce: true,
   });
   return (
-    <motion.div ref={ref} variants={cardVariants} initial="hidden" animate={inView ? "visible" : "hidden"}
-      className="flex flex-col gap-2 bg-white dark:bg-grey-800 rounded-lg p-4">
+    <motion.div
+      ref={ref}
+      variants={cardVariants}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      className="flex flex-col gap-2 bg-white dark:bg-grey-800 rounded-lg p-4"
+    >
       <div className="relative group rounded-lg bg-violet-50">
-        <img alt={name} width={1000} height={1000} className="max-w-full h-48 max-h-full object-cover object-top rounded-lg"
-          src={image} />
-        {(links.visit.trim() || links.code.trim() || links.video.trim()) && (
+        <img
+          alt={name}
+          width={1000}
+          height={1000}
+          className="max-w-full h-48 max-h-full object-cover object-top rounded-lg"
+          src={image}
+        />
+        {(links.visit?.trim() || links.code?.trim() || links.video?.trim()) && (
           <div className="absolute top-0 scale-x-0 group-hover:scale-100 transition-transform origin-left duration-200 ease-linear bg-gray-800 bg-opacity-60 w-full h-full rounded-lg flex items-center gap-4 justify-center">
-            {links.visit.trim() && (
-              <Link to={links.visit} target="_blank"
-                className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
+            {links.visit?.trim() && (
+              <a href={links.visit} target="_blank" rel="noopener noreferrer" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
                 <BiLinkExternal size={20} />
-              </Link>
+              </a>
             )}
-            {links.code.trim() && (
-              <Link to={links.code} target="_blank"
-                className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
+            {links.code?.trim() && (
+              <a href={links.code} target="_blank" rel="noopener noreferrer" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
                 <FaGithub size={20} />
-              </Link>
+              </a>
             )}
-            {links.video.trim() && (
-              <Link to={links.video} target="_blank"
-                className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
+            {links.video?.trim() && (
+              <a href={links.video} target="_blank" rel="noopener noreferrer" className="bg-white text-black p-2 rounded-lg hover:bg-black hover:text-white transition-all">
                 <FaVideo size={20} />
-              </Link>
+              </a>
             )}
           </div>
         )}

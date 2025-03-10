@@ -10,7 +10,7 @@ function Projects() {
   const categories = [...Array.from(new Set(projects.map((currentProject) => currentProject.category)))];
   const [category, setCategory] = useState(categories[0]);
   const [filteredProjects, setFilteredProjects] = useState(projects);
-  const [viewAll, setViewAll] = useState(false);
+  const [viewAll, setViewAll] = useState(true);
 
   const filterProjectsBasedOnCategory = (category) => {
     setViewAll(true);
