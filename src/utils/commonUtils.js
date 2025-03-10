@@ -149,6 +149,15 @@ exports.getSkills = () => {
 exports.getProjectDetails = () => {
   return [
     {
+      "name": "Kestra - OpenSource Orchestration Platform",
+      "techstack": "ReactJS",
+      "category": "Mern-Stack",
+      "image": '../images/kestra.png',
+      "links": {
+        "code": "https://github.com/kestra-io/kestra/issues"
+      }
+    },
+    {
       "name": "Nexter - Your Home Your Freedom",
       "techstack": "HTML5, CSS3, Sass",
       "category": "Basic Web",
