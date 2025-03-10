@@ -26,9 +26,9 @@ function About() {
                   bg-violet-50 dark:bg-violet-900/10'>{TITLE}</p>
                 <p className='text-sm md:text-base my-2 text-gray-600 dark:text-gray-300'>{ABOUT}</p>
                 <div className='flex items-center gap-4 md:mt-4'>
-                  { RESUME_URL.trim() && <ScrollLink to={RESUME_URL} target="_blank" className='text-sm md:text-base
+                  { RESUME_URL.trim() && <a href={RESUME_URL} target="_blank" className='text-sm md:text-base
                     bg-violet-600 dark:bg-violet-700 text-white w-fit rounded-md py-2 px-6 hover:shadow-xl
-                    transition-shadow cursor-pointer'>Resume</ScrollLink>
+                    transition-shadow cursor-pointer'>Resume</a>
                   }
                   {/* {
                     CALL_URL.trim() && <ScrollLink to={CALL_URL} target="_blank" className='text-violet-600

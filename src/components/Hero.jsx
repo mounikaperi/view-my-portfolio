@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { LIGHT_THEME, NAME, SHORT_DESCRIPTION, TITLES } from '../utils/constants';
 import imageUrl from '../images/herobgc.jpg';
 import wavingHand from '../images/waving-hand.gif';
-import profileImageUrl from '../images/girl-with-laptop-table-white-background_1308-52074.jpg';
+import profileImageUrl from '../images/profile1.jpg';
 import techStackImage1 from '../images/icons8-java.gif';
 import techStackImage2 from '../images/icons8-nodejs-48.png';
 import techStackImage3 from '../images/icons8-react-80.png';
